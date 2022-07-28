@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <VBox layoutY="2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="170.0" prefWidth="600.0">
+               <children>
+                  <Label text="Appointment Manager">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="30.0" top="20.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Reports">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="302.0" prefWidth="600.0" spacing="25.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionToAppointmentsReports" text="Appointments by Month Report" />
+                  <Button mnemonicParsing="false" onAction="#onActionToContactReports" text="Contacts Report" />
+                  <Button mnemonicParsing="false" onAction="#onActionToDivisionsReports" text="Divisions Report" />
+               </children>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="86.0" prefWidth="575.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionBack" text="Back">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="25.0" right="25.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

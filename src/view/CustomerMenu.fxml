@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerMenuController">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="1100.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="113.0" prefWidth="1001.0">
+               <children>
+                  <Label prefHeight="100.0" prefWidth="282.0" text="Appointment Manager">
+                     <padding>
+                        <Insets bottom="30.0" top="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label text="Customer Records">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <TableView fx:id="customerTable" prefHeight="415.0" prefWidth="1000.0">
+               <columns>
+                  <TableColumn fx:id="customerIdCol" prefWidth="82.0" text="Customer ID" />
+                  <TableColumn fx:id="customerNameCol" prefWidth="193.0" text="Customer Name" />
+                  <TableColumn fx:id="phoneNumberCol" minWidth="0.0" prefWidth="156.0" text="Phone Number" />
+                  <TableColumn fx:id="addressCol" minWidth="0.0" prefWidth="258.0" text="Address" />
+                  <TableColumn fx:id="zipCodeCol" minWidth="0.0" prefWidth="153.0" text="Zipcode" />
+                  <TableColumn fx:id="countryCol" minWidth="0.0" prefWidth="136.0" text="Country" />
+                  <TableColumn fx:id="divisionCol" maxWidth="434.0" prefWidth="121.0" text="Division" />
+               </columns>
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionDisplayNewCustomer" text="New Customer" />
+                  <Button mnemonicParsing="false" onAction="#onActionDisplayEditCustomer" text="Edit Customer" />
+                  <Button mnemonicParsing="false" onAction="#onActionDeleteCustomer" text="Delete Customer" />
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionBackToMainMenu" text="Back" />
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
