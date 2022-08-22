@@ -89,7 +89,7 @@ The Appointment Manager is a school project that was built using Java, JavaFX, M
 ![upcomingapts](https://user-images.githubusercontent.com/101952500/185838937-66fcd047-b670-4f17-9af4-ee5c94e01237.jpg)
 ![deletemsg](https://user-images.githubusercontent.com/101952500/185838946-a3728ed9-5d9c-4467-8f43-81e946f3b6bd.jpg)
 
-* Alerts are down throughout the program
+* Alerts are shown throughout the program
   * Leaving any required fields blank.
   * Incorrect credentials.
   * Upcoming appointments.
