@@ -1,17 +1,114 @@
-# Appointment-Manager
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-### SCENARIO
+
+<div align='center'>
+    <h1>Appointment Manager</h1>
+    <p>An appointment manager to maintain a bussiness. Built using Java, JavaFX, MySQL and Scene Builder.</p>
+        <a href='https://www.linkedin.com/in/plang-psm/' target='_blank'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn tag" /></a>
+</div>
+
+
+## Table of Contents
+* [Description](#description)
+* [Scenario](#scenario)
+* [Technologies](#technologies)
+* [Road Map](#road-map)
+* [Launch](#launch)
+* [Contact](#contact)
+* [Resources](#resources)
+
+## Description
+The Appointment Manager is a school project that was built using Java, JavaFX, MySQL and Scenebuilder. It consists of three major screens incluidng the appointment screen, customer screen and the report screen. These three, as well as the additional eight, user friendly GUIs were created using Scene Builder. The data that filled these screens were formatted and provided by Western Governors University instructors using the MySQL database. The data was then used to perform C.R.U.D. functions in Java, and JavaFX to create a functionable appointment manager. 
+
+### Login
+
+<img src='https://user-images.githubusercontent.com/101952500/185836917-aa532ec2-7950-4875-a8f1-613525bdca62.jpg' alt='Login image' width='35%'/><img src='https://user-images.githubusercontent.com/101952500/185838953-c813fa2d-7e98-4bef-b391-9985cb0b485c.jpg' alt='Login_activity image' width='65%' />
+
+
+* User login validation.
+* User location displayed.
+* French language conversion (including errors).
+* 15 minute appointment alert upon validation.
+* Login activity attempts are stored in a .txt file.
+
+### Appointnment Screen
+![appointments](https://user-images.githubusercontent.com/101952500/185836929-2a56a83b-5b84-4d33-b0ac-367cbbf9b83f.jpg)
+
+
+* Access to all appointments.
+* Navigation to the customer screen.
+* Navigation to the report screen.
+* Filtering by all, weekly, or monthly appointments.
+* Add, edit and delete appointment functions.
+* Alerts will display for any blank fields, and upcoming appointments.
+* Program exit.
+
+### Customer Screen
+![customers](https://user-images.githubusercontent.com/101952500/185837294-e5d68415-6780-41ab-9455-521c53ea226d.jpg)
+* Access to all customers.
+* Add, edit and delete customer functions.
+  * Deleting a customer will resuly in deletion of all associated appointments.
+* Navigation back to the appointment screen.
+
+
+### Appoinment and Customer Add and Edit screens
+
+<img src='https://user-images.githubusercontent.com/101952500/185837678-5e3da5e1-15f5-4009-b138-7a78a23dc8c3.jpg' alt='Add customer image' width='50%'/><img src='https://user-images.githubusercontent.com/101952500/185837694-0f266a54-f53a-468c-bda3-2910007e3e03.jpg' alt='Edit appointment image' width='50%'/>
+
+* Edit screen passes all the data associated with the appointment or customer id.
+* Customer
+  *  The division (state/province) filters based off the country selected.
+      - For example, U.S. with only display U.S. states.
+* Appointment 
+  *  Business hours are from 8AM to 10PM and cannot be scheduled before or after.
+  *  Appointments cannot overlap with another appointment.
+
+* Alerts will display for any blank fields.
+
+### Report Screen
+![reports](https://user-images.githubusercontent.com/101952500/185838436-e1099433-cb87-4368-9ff7-3d43c48c284b.jpg)
+* All report options will be displayed
+
+### Report by month and type
+![monreports](https://user-images.githubusercontent.com/101952500/185838598-906e60ea-f5ac-4cc5-bc35-6e304c44a9e3.jpg)
+
+* Total number of appointments by type and month.
+
+### Report by contact
+![conreport](https://user-images.githubusercontent.com/101952500/185838603-a42d66e6-b05b-4bd3-b445-4ba88ed49703.jpg)
+* Report of all appointments associated to the contact selected from the combo box.
+
+### Report by country and division
+![divreport](https://user-images.githubusercontent.com/101952500/185838611-ca936ab8-0ea1-43b5-8e4a-68cbb5ce264f.jpg)
+* Total number of appointments by the country and division.
+
+### Alerts
+![upcomingapts](https://user-images.githubusercontent.com/101952500/185838937-66fcd047-b670-4f17-9af4-ee5c94e01237.jpg)
+![deletemsg](https://user-images.githubusercontent.com/101952500/185838946-a3728ed9-5d9c-4467-8f43-81e946f3b6bd.jpg)
+
+* Alerts are down throughout the program
+  * Leaving any required fields blank.
+  * Incorrect credentials.
+  * Upcoming appointments.
+  * Clicking the edut button before selecting an appointment or customer.
+  * Before deleting an appointment or customer.
+  * If the save was successful. 
+
+
+## Scenario
 You are working for a software company that has been contracted to develop a GUI-based scheduling desktop application. The contract is with a global consulting organization that conducts business in multiple languages and has main offices in Phoenix, Arizona; White Plains, New York; Montreal, Canada; and London, England. The consulting organization has provided a MySQL database that the application must pull data from. The database is used for other systems, so its structure cannot be modified.
 
 The organization outlined specific business requirements that must be met as part of the application. From these requirements, a system analyst at your company created solution statements for you to implement in developing the application. These statements are listed in the requirements section.
 
 Your company acquires Country and First-Level-Division data from a third party that is updated once per year. These tables are prepopulated with read-only data. Please use the attachment “Locale Codes for Region and Language” to review division data. Your company also supplies a list of contacts, which are prepopulated in the Contacts table; however, administrative functions such as adding users are beyond the scope of the application and done by your company’s IT support staff. Your application should be organized logically using one or more design patterns and generously commented using Javadoc so your code can be read and maintained by other programmers.
 
-
-
-
-## REQUIREMENTS
-Your submission must be your original work. No more than a combined total of 30% of the submission and no more than a 10% match to any one individual source can be directly quoted or closely paraphrased from sources, even if cited correctly. The originality report that is provided when you submit your task can be used as a guide.
+<details>
+<summary>Project requirements provided by Western Governors University</summary>
+<br>
+  Your submission must be your original work. No more than a combined total of 30% of the submission and no more than a 10% match to any one individual source can be directly quoted or closely paraphrased from sources, even if cited correctly. The originality report that is provided when you submit your task can be used as a guide.
 
 
 
@@ -200,7 +297,35 @@ Note: The comments on the lambda need to be located in the comments describing t
 •  a description of the additional report of your choice you ran in part A3f
 
 •  the MySQL Connector driver version number, including the update number (e.g., mysql-connector-java-8.1.23)
+</details>
 
 
+## Technologies
+* ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+* ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+* ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
-### F.  Demonstrate professional communication in the content and presentation of your submission.
+## Road Map
+- [ ] Create a usable envrionment for the project
+
+## Launch
+Coming soon.
+
+
+## Contact
+<a href='https://www.linkedin.com/in/plang-psm/' target='_blank'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn tag" /></a>
+
+## Resources
+Badges: <a href='https://github.com/Ileriayo/markdown-badges' target='_blank'>Copyright (c) 2020 Ileriayo Adebiyi</a>
+
+Header and Layout: <a href='https://github.com/othneildrew/Best-README-Template' target='_blank'>Copyright (c) 2021 Othneil Drew</a>
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/plang-psm/dice-game.svg?style=for-the-badge
+[contributors-url]: https://github.com/plang-psm/dice-game/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/plang-psm/dice-game.svg?style=for-the-badge
+[forks-url]: https://github.com/plang-psm/dice-game/network/members
+[stars-shield]: https://img.shields.io/github/stars/plang-psm/dice-game.svg?style=for-the-badge
+[stars-url]: https://github.com/plang-psm/dice-game/stargazers
+[issues-shield]: https://img.shields.io/github/issues/plang-psm/dice-game.svg?style=for-the-badge
+[issues-url]: https://github.com/plang-psm/dice-game/issues
