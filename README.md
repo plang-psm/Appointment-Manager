@@ -50,7 +50,7 @@ The Appointment Manager is a school project that was built using Java, JavaFX, M
 ![customers](https://user-images.githubusercontent.com/101952500/185837294-e5d68415-6780-41ab-9455-521c53ea226d.jpg)
 * Access to all customers.
 * Add, edit and delete customer functions.
-  * Deleting a customer will resuly in deletion of all associated appointments.
+  * Deleting a customer will result in deletion of all associated appointments.
 * Navigation back to the appointment screen.
 
 
@@ -61,7 +61,7 @@ The Appointment Manager is a school project that was built using Java, JavaFX, M
 * Edit screen passes all the data associated with the appointment or customer id.
 * Customer
   *  The division (state/province) filters based off the country selected.
-      - For example, U.S. with only display U.S. states.
+      - For example, U.S. will only display U.S. states.
 * Appointment 
   *  Business hours are from 8AM to 10PM and cannot be scheduled before or after.
   *  Appointments cannot overlap with another appointment.
@@ -89,11 +89,11 @@ The Appointment Manager is a school project that was built using Java, JavaFX, M
 ![upcomingapts](https://user-images.githubusercontent.com/101952500/185838937-66fcd047-b670-4f17-9af4-ee5c94e01237.jpg)
 ![deletemsg](https://user-images.githubusercontent.com/101952500/185838946-a3728ed9-5d9c-4467-8f43-81e946f3b6bd.jpg)
 
-* Alerts are shown throughout the program
+* Alerts shown throughout the program include
   * Leaving any required fields blank.
   * Incorrect credentials.
   * Upcoming appointments.
-  * Clicking the edut button before selecting an appointment or customer.
+  * Clicking the edit button before selecting an appointment or customer.
   * Before deleting an appointment or customer.
   * If the save was successful. 
 
