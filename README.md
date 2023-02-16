@@ -6,7 +6,7 @@
 
 <div align='center'>
     <h1>Appointment Manager</h1>
-    <p>An appointment manager to maintain a bussiness. Built using Java, JavaFX, MySQL and Scene Builder.</p>
+    <p>A GUI-based scheduling desktop application to help a global consulting organization manage appointments. Created using Java, JavaFX, MySQL, and Scenebuilder.</p>
         <a href='https://www.linkedin.com/in/plang-psm/' target='_blank'><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn tag" /></a>
 </div>
 
